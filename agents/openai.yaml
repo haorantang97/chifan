@@ -1,0 +1,4 @@
+interface:
+  display_name: "餐厅筛选与避雷"
+  short_description: "查经营模式、食材与烹饪、主厨履历和推荐者阅历，筛选值得吃的餐厅"
+  default_prompt: "用 $restaurant-screening 分析这些餐厅，从经营模式、菜肴和人的经验判断是否值得吃，并说明影响选择的依据。"
