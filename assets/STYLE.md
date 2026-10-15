@@ -1,27 +1,29 @@
-# 吃饭 Skill · Let’s Eat — visual identity
+# Dinning Skill · 吃饭Skill — visual identity
 
-## Identity and reference
+## Identity
 
-Public name: **吃饭 Skill / Let’s Eat**. Repository and invocation: `chifan` / `$chifan`.
+Public name: **Dinning Skill**. Chinese subtitle: **吃饭Skill**. Repository and invocation: `dinning` / `$dinning`.
 
-The repository follows Lab 305’s presentation standard: an original hero, clear bilingual identity, a small factual badge row, practical examples and usable installation instructions. [LabKit](https://github.com/haorantang97/LabKit) is the reference for presentation quality and hierarchy. This project uses an everyday restaurant mood.
+## Direction and reference
 
-## Motif
+A restrained restaurant-guide cover for considered restaurant selection. The user-selected reference is the simple, refined character of the [MICHELIN Guide](https://guide.michelin.com/en), interpreted through an original Lab 305 identity: wine red, warm ivory, clear type hierarchy and an empty plate in fine linework.
 
-A blue-and-cream rice bowl, a sunny-side-up egg, red chopsticks and a tucked restaurant receipt. Bold sign-painted Chinese lettering anchors the left; the dinner-table illustration fills the right. Slightly imperfect screen-print edges and paper grain make it warm and informal.
+The composition places the large wordmark on the left and a dinner plate with fork and knife on the right. The artwork uses generous margins, subtle paper grain and precise spacing. The restaurant-selection rules remain the same.
 
-## Palette and type
+## Typography and palette
 
-- Light: warm ivory paper, deep ink-blue lettering and bowl, tomato-red chopsticks and “Skill”, yellow egg.
-- Dark: deep navy paper, ivory title, cream-and-blue bowl, warm red and yellow accents.
-- Chinese title: oversized hand-drawn sign lettering for `吃饭`.
-- Secondary text: red handwritten `Skill`; clear block capitals for `LET’S EAT` and `LAB 305`.
-- README badges use ink blue, tomato red and warm amber.
+- Main wordmark: `DINNING`, in large contemporary serif capitals.
+- Secondary line: `SKILL`, in widely spaced sans-serif capitals.
+- Small publisher line: `LAB 305`.
+- Chinese subtitle: `吃饭Skill`, in a refined Song-style face.
+- Dark hero: deep wine-red paper and warm ivory type/linework.
+- Light hero: warm ivory paper and deep wine-red type/linework.
+- README badges: wine red `#a31832` and charcoal `#333333`.
 
-## Files and use
+## Assets
 
-- `hero-light.png`: 2172 × 724 px, 3:1.
-- `hero-dark.png`: 2172 × 724 px, 3:1 dark-theme companion.
-- [PROMPTS.md](PROMPTS.md): exact generation and editing prompts.
+- `hero-dark.png`: 3:1 banner, 2172 × 724 px.
+- `hero-light.png`: matching 3:1 banner, 2172 × 724 px.
+- [PROMPTS.md](PROMPTS.md): the final image-editing prompts and production mode.
 
-The README uses `picture` with `prefers-color-scheme` and a light fallback. Both language editions share these assets. Check the full composition at desktop and narrow widths whenever replacing them. These are repository hero images; no GitHub social-preview setting is configured by this package.
+Both README editions share the assets using `picture`, with theme selection through `prefers-color-scheme` and a light fallback. The files are repository hero images. GitHub social-preview configuration is separate.

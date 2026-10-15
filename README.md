@@ -3,22 +3,24 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.png">
-  <img src="assets/hero-light.png" alt="吃饭 Skill / Let’s Eat — LAB 305 出品的餐厅筛选 Skill" width="1000">
+  <img src="assets/hero-light.png" alt="Dinning Skill · 吃饭Skill — LAB 305 出品的餐厅筛选 Skill" width="1000">
 </picture>
 
 **中文** · [English](README.en.md)
 
-[![Lab 305](https://img.shields.io/badge/LAB_305-Let%E2%80%99s_Eat-123e5a?style=flat-square)](https://github.com/haorantang97) [![Agent Skill](https://img.shields.io/badge/Agent-Skill-d8462d?style=flat-square)](SKILL.md) [![License](https://img.shields.io/badge/license-PolyForm_NC_1.0.0-b45309?style=flat-square)](LICENSE)
+[![Lab 305](https://img.shields.io/badge/LAB_305-Dinning-a31832?style=flat-square)](https://github.com/haorantang97) [![Agent Skill](https://img.shields.io/badge/Agent-Skill-333333?style=flat-square)](SKILL.md) [![License](https://img.shields.io/badge/license-PolyForm_NC_1.0.0-333333?style=flat-square)](LICENSE)
 
 [开始使用](#开始使用) · [它会看什么](#它会看什么) · [使用示例](#使用示例) · [FAQ](#faq)
 
 </div>
 
-# 吃饭 Skill / Let’s Eat
+# Dinning Skill
 
-**好好选店，好好吃饭。**
+吃饭Skill
 
-吃饭 Skill 是 Lab 305 的餐厅筛选工具。把餐厅、菜单或一份探店推荐交给 Agent，它会查看经营模式、食材与烹饪、主厨与推荐者的经验，帮你判断这顿饭值不值得考虑。
+**认真选餐厅，把食物放在首位。**
+
+Dinning Skill 是 Lab 305 的餐厅筛选工具。把餐厅、菜单或一份探店推荐交给 Agent，它会查看经营模式、食材与烹饪、主厨与推荐者的经验，帮你判断这顿饭值不值得考虑。
 
 适合把好吃放在首位、对资本化与标准化出品比较挑剔的人。
 
@@ -26,18 +28,18 @@
 
 在 Codex 中说：
 
-> 用 skill-installer 安装 https://github.com/haorantang97/chifan 的根目录 Skill，名称为 chifan。
+> 用 skill-installer 安装 https://github.com/haorantang97/dinning 的根目录 Skill，名称为 dinning。
 
 安装后，在下一轮对话中输入：
 
-> 用 `$chifan` 帮我看这家餐厅值不值得吃：[餐厅名、城市及官网或菜单]。
+> 用 `$dinning` 帮我看这家餐厅值不值得吃：[餐厅名、城市及官网或菜单]。
 
 也可以手动安装。需要 Git，且目标文件夹尚不存在：
 
 ```sh
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone https://github.com/haorantang97/chifan.git \
-  "${CODEX_HOME:-$HOME/.codex}/skills/chifan"
+git clone https://github.com/haorantang97/dinning.git \
+  "${CODEX_HOME:-$HOME/.codex}/skills/dinning"
 ```
 
 通过 Git 克隆安装后，可在该目录运行 `git pull --ff-only` 更新。Skill 本身不安装搜索服务；需要查询当前资料时，使用宿主 Agent 已有的搜索或浏览能力。
@@ -56,11 +58,11 @@ git clone https://github.com/haorantang97/chifan.git \
 
 ### 几家店里挑一家
 
-> 用 `$chifan` 比较这三家餐厅。我们更在意食物，人均预算 ¥500。先说你会选哪家，再说影响选择的依据。餐厅与菜单如下：……
+> 用 `$dinning` 比较这三家餐厅。我们更在意食物，人均预算 ¥500。先说你会选哪家，再说影响选择的依据。餐厅与菜单如下：……
 
 ### 看一份高价菜单
 
-> 用 `$chifan` 分析这份菜单：食材能否撑起价格，设计有什么值得注意的地方，主厨实际参与到什么程度？我附上了菜单和主厨介绍。
+> 用 `$dinning` 分析这份菜单：食材能否撑起价格，设计有什么值得注意的地方，主厨实际参与到什么程度？我附上了菜单和主厨介绍。
 
 下面用一组虚构资料展示输出方式：
 
@@ -70,7 +72,7 @@ git clone https://github.com/haorantang97/chifan.git \
 
 ### 看一份探店推荐
 
-> 用 `$chifan` 看这份推荐值不值得参考。重点看它有没有解释食材、技法和组合效果，以及推荐者有没有足够的比较经验。以下是推荐内容和公开资料：……
+> 用 `$dinning` 看这份推荐值不值得参考。重点看它有没有解释食材、技法和组合效果，以及推荐者有没有足够的比较经验。以下是推荐内容和公开资料：……
 
 结果会先给选择建议，再说明具体依据和资料缺口。照片中的分析不会写成亲身试吃。
 
