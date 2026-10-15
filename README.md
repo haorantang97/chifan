@@ -34,7 +34,7 @@ Dinning Skill 是 Lab 305 的餐厅筛选工具。把餐厅、菜单或一份探
 
 > 用 `$dinning` 帮我看这家餐厅值不值得吃：[餐厅名、城市及官网或菜单]。
 
-手动安装时，将仓库中的 `skills/dinning/` 文件夹复制到 Codex 的 Skills 目录（默认 `~/.codex/skills/`）。更新时，替换该文件夹中的规则和配置。
+手动安装时，将仓库中的 `skills/dinning/` 文件夹复制到 Codex 的 Skills 目录（默认 `~/.codex/skills/`）。更新时，用新版 `skills/dinning/` 完整替换已安装的文件夹。
 
 需要查询当前资料时，使用宿主 Agent 已有的搜索或浏览能力。
 
@@ -82,7 +82,7 @@ Dinning Skill 是 Lab 305 的餐厅筛选工具。把餐厅、菜单或一份探
 
 ## 文件与验证
 
-[skills/dinning/](skills/dinning/) 是可安装的 Skill，包含完整规则 [SKILL.md](skills/dinning/SKILL.md) 和 Codex 配置 [agents/openai.yaml](skills/dinning/agents/openai.yaml)。仓库外层的 `assets/` 保存 README 封面与设计记录。
+[skills/dinning/](skills/dinning/) 是可安装的 Skill，包含完整规则 [SKILL.md](skills/dinning/SKILL.md)、Codex 配置 [agents/openai.yaml](skills/dinning/agents/openai.yaml) 和 [许可证](skills/dinning/LICENSE)。仓库外层的 `assets/` 保存 README 封面与设计记录。
 
 已完成 Skill 格式、规则合并、文件链接及 README 渲染检查。实际餐厅选择效果尚未经过真实用餐结果验证。
 

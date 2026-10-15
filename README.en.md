@@ -34,7 +34,7 @@ Once installed, use it on your next turn:
 
 > Use `$dinning` to help me decide whether this restaurant is worth eating at: [restaurant name, city, and website or menu].
 
-For manual installation, copy the repository's `skills/dinning/` folder into your Codex Skills directory (`~/.codex/skills/` by default). To update, replace the rules and configuration in that folder.
+For manual installation, copy the repository's `skills/dinning/` folder into your Codex Skills directory (`~/.codex/skills/` by default). To update, replace the installed folder with the complete new `skills/dinning/` folder.
 
 The skill uses the host agent's existing search or browsing tools when current information is needed.
 
@@ -82,7 +82,7 @@ The response starts with a recommendation, then explains the supporting details 
 
 ## Files and validation
 
-[skills/dinning/](skills/dinning/) is the installable skill, containing the complete instructions in [SKILL.md](skills/dinning/SKILL.md) and the Codex configuration in [agents/openai.yaml](skills/dinning/agents/openai.yaml). The repository-level `assets/` folder holds the README covers and design notes.
+[skills/dinning/](skills/dinning/) is the installable skill, containing the complete instructions in [SKILL.md](skills/dinning/SKILL.md), the Codex configuration in [agents/openai.yaml](skills/dinning/agents/openai.yaml) and the [license](skills/dinning/LICENSE). The repository-level `assets/` folder holds the README covers and design notes.
 
 Skill format, rule consolidation, file links and README rendering have been checked. Its restaurant recommendations have not been validated against actual dining experiences.
 
