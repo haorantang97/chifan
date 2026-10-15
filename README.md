@@ -8,7 +8,7 @@
 
 **中文** · [English](README.en.md)
 
-[![Lab 305](https://img.shields.io/badge/LAB_305-Dinning-a31832?style=flat-square)](https://github.com/haorantang97) [![Agent Skill](https://img.shields.io/badge/Agent-Skill-333333?style=flat-square)](SKILL.md) [![License](https://img.shields.io/badge/license-PolyForm_NC_1.0.0-333333?style=flat-square)](LICENSE)
+[![Lab 305](https://img.shields.io/badge/LAB_305-Dinning-a31832?style=flat-square)](https://github.com/haorantang97) [![Agent Skill](https://img.shields.io/badge/Agent-Skill-333333?style=flat-square)](skills/dinning/SKILL.md) [![License](https://img.shields.io/badge/license-PolyForm_NC_1.0.0-333333?style=flat-square)](LICENSE)
 
 [开始使用](#开始使用) · [它会看什么](#它会看什么) · [使用示例](#使用示例) · [FAQ](#faq)
 
@@ -28,21 +28,15 @@ Dinning Skill 是 Lab 305 的餐厅筛选工具。把餐厅、菜单或一份探
 
 在 Codex 中说：
 
-> 用 skill-installer 安装 https://github.com/haorantang97/dinning 的根目录 Skill，名称为 dinning。
+> 用 skill-installer 安装 https://github.com/haorantang97/dinning/tree/main/skills/dinning
 
 安装后，在下一轮对话中输入：
 
 > 用 `$dinning` 帮我看这家餐厅值不值得吃：[餐厅名、城市及官网或菜单]。
 
-也可以手动安装。需要 Git，且目标文件夹尚不存在：
+手动安装时，将仓库中的 `skills/dinning/` 文件夹复制到 Codex 的 Skills 目录（默认 `~/.codex/skills/`）。更新时，替换该文件夹中的规则和配置。
 
-```sh
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone https://github.com/haorantang97/dinning.git \
-  "${CODEX_HOME:-$HOME/.codex}/skills/dinning"
-```
-
-通过 Git 克隆安装后，可在该目录运行 `git pull --ff-only` 更新。Skill 本身不安装搜索服务；需要查询当前资料时，使用宿主 Agent 已有的搜索或浏览能力。
+需要查询当前资料时，使用宿主 Agent 已有的搜索或浏览能力。
 
 ## 它会看什么
 
@@ -82,13 +76,13 @@ git clone https://github.com/haorantang97/dinning.git \
 
 **只能查某个平台吗？** 可以跨平台查餐厅官网、菜单和公开资料，也可以直接分析你给的文字或图片。能否打开某个页面取决于宿主 Agent 的工具和访问条件。
 
-**它的口味是什么？** 食物优先，对资本化、连锁和标准化出品从严。规则也包含具体地区的取舍和个别品牌例外，可以在 [SKILL.md](SKILL.md) 中阅读全文。
+**它的口味是什么？** 食物优先，对资本化、连锁和标准化出品从严。规则也包含具体地区的取舍和个别品牌例外，可以在 [SKILL.md](skills/dinning/SKILL.md) 中阅读全文。
 
 **有英文版吗？** [English README](README.en.md) 提供完整的英文介绍。执行规则统一维护在中文 `SKILL.md` 中。
 
 ## 文件与验证
 
-[SKILL.md](SKILL.md) 是完整规则入口；[agents/openai.yaml](agents/openai.yaml) 提供 Codex 显示名与默认提示词。`assets/` 保存品牌视觉与设计说明。
+[skills/dinning/](skills/dinning/) 是可安装的 Skill，包含完整规则 [SKILL.md](skills/dinning/SKILL.md) 和 Codex 配置 [agents/openai.yaml](skills/dinning/agents/openai.yaml)。仓库外层的 `assets/` 保存 README 封面与设计记录。
 
 已完成 Skill 格式、规则合并、文件链接及 README 渲染检查。实际餐厅选择效果尚未经过真实用餐结果验证。
 

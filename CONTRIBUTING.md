@@ -5,7 +5,7 @@
 - Issue 请说明任务、提供给 Agent 的资料，以及输出中具体有问题的部分。
 - 修改规则时，说明改变了哪项判断、为什么需要改变，并保留它的适用条件。
 - 保持经营模式、菜肴品质、人的经验三个部分清晰；避免重复规则和无依据的评分标准。
-- 更新 `SKILL.md` 后，同步核对 README 和 `agents/openai.yaml`。
+- 更新 `skills/dinning/SKILL.md` 后，同步核对 README 和 `skills/dinning/agents/openai.yaml`。
 - 修改 `README.md` 时，在同一提交中同步 `README.en.md`，保持命令、链接与功能描述一致。
 - PR 请注明做过的格式检查或实际使用验证；未验证的项目如实说明。
 - 提交前移除个人隐私、密钥及与复现无关的信息。

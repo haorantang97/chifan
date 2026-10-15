@@ -8,7 +8,7 @@
 
 [中文](README.md) · **English**
 
-[![Lab 305](https://img.shields.io/badge/LAB_305-Dinning-a31832?style=flat-square)](https://github.com/haorantang97) [![Agent Skill](https://img.shields.io/badge/Agent-Skill-333333?style=flat-square)](SKILL.md) [![License](https://img.shields.io/badge/license-PolyForm_NC_1.0.0-333333?style=flat-square)](LICENSE)
+[![Lab 305](https://img.shields.io/badge/LAB_305-Dinning-a31832?style=flat-square)](https://github.com/haorantang97) [![Agent Skill](https://img.shields.io/badge/Agent-Skill-333333?style=flat-square)](skills/dinning/SKILL.md) [![License](https://img.shields.io/badge/license-PolyForm_NC_1.0.0-333333?style=flat-square)](LICENSE)
 
 [Get started](#get-started) · [What it looks at](#what-it-looks-at) · [Examples](#examples) · [FAQ](#faq)
 
@@ -28,21 +28,15 @@ It is for people who put good food first and are particular about investor-drive
 
 In Codex, say:
 
-> Use skill-installer to install the root-level skill from https://github.com/haorantang97/dinning under the name dinning.
+> Use skill-installer to install https://github.com/haorantang97/dinning/tree/main/skills/dinning
 
 Once installed, use it on your next turn:
 
 > Use `$dinning` to help me decide whether this restaurant is worth eating at: [restaurant name, city, and website or menu].
 
-You can also install it manually. Git is required, and the destination folder must not already exist:
+For manual installation, copy the repository's `skills/dinning/` folder into your Codex Skills directory (`~/.codex/skills/` by default). To update, replace the rules and configuration in that folder.
 
-```sh
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone https://github.com/haorantang97/dinning.git \
-  "${CODEX_HOME:-$HOME/.codex}/skills/dinning"
-```
-
-If you installed it with Git, run `git pull --ff-only` in that folder to update. The skill does not install a search service; it uses the host agent's existing search or browsing tools when current information is needed.
+The skill uses the host agent's existing search or browsing tools when current information is needed.
 
 ## What it looks at
 
@@ -82,13 +76,13 @@ The response starts with a recommendation, then explains the supporting details 
 
 **Is it limited to one platform?** It can use restaurant websites, menus and public information across platforms, or analyze text and images you provide. Whether a page is accessible depends on the host agent's tools and access.
 
-**What are its tastes?** Food comes first, with a strict view of investor-driven restaurant businesses, chains and standardized cooking. The rules also include preferences about specific areas and exceptions for individual brands. Read the full instructions in [SKILL.md](SKILL.md).
+**What are its tastes?** Food comes first, with a strict view of investor-driven restaurant businesses, chains and standardized cooking. The rules also include preferences about specific areas and exceptions for individual brands. Read the full instructions in [SKILL.md](skills/dinning/SKILL.md).
 
 **Which language are the docs and rules in?** This is the complete English introduction. The skill's instructions are maintained in a single Chinese `SKILL.md`.
 
 ## Files and validation
 
-[SKILL.md](SKILL.md) contains the complete instructions. [agents/openai.yaml](agents/openai.yaml) provides the Codex display name and default prompt. `assets/` contains the visual identity and design notes.
+[skills/dinning/](skills/dinning/) is the installable skill, containing the complete instructions in [SKILL.md](skills/dinning/SKILL.md) and the Codex configuration in [agents/openai.yaml](skills/dinning/agents/openai.yaml). The repository-level `assets/` folder holds the README covers and design notes.
 
 Skill format, rule consolidation, file links and README rendering have been checked. Its restaurant recommendations have not been validated against actual dining experiences.
 
